@@ -1,0 +1,35 @@
+<style>
+    .signin{
+        display: flex;
+        justify-content: center;
+       
+    }
+    form{
+        border: 1px solid black;
+        padding:0px 20px 20px 20px;
+        width:600px;
+        border-radius: 10px;
+        margin:50px 0px 0px 90px;
+        background-color: antiquewhite;
+        
+    }
+</style>
+
+<div class="container signin">
+    
+    <div class="col-md-8 foorm1">
+        <form> 
+            <h3>SIGNIN</h3>
+        <div class="form-group">
+            <label>Enter Your Email</label>
+            <input class="form-control" type="email" placeholder="Enter Your Email" ng-model="signin.user.email">
+        </div>
+        <div class="form-group">
+            <label>Enter Your Password</label>
+            <input class="form-control" type="password" placeholder="Enter Your Password" ng-model="signin.user.password">
+        </div>
+        <button class="btn btn-primary" type="submit" ng-click="signin.signin()">SIGN IN</Button></br>
+           Create An Acccount?   <a ng-href="#!register">Register</a>
+    </form>
+    </div>
+</div> 

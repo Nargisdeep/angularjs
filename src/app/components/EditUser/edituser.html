@@ -1,0 +1,46 @@
+<style>
+    .register{
+        display: flex;
+        justify-content: center;
+       
+    }
+    form{
+        border: 1px solid black;
+        padding:0px 20px 20px 20px;
+        width:600px;
+        border-radius: 10px;
+        margin:50px 0px 0px 90px;
+        background-color: antiquewhite;
+        
+    }
+</style>
+
+<div class="container register">
+    
+    <div class="col-md-8 foorm1">
+        <form> 
+            <h3>EDIT</h3>
+        <div class="form-group">
+            <label>Edit Your Email</label>
+            <input class="form-control" type="email" placeholder="Edit Your Email" ng-model="edit.user.email">
+        </div>
+        <div class="form-group">
+            <label>Edit Your Password</label>
+            <input class="form-control" type="password" placeholder="Edit Your Password" ng-model="edit.user.password">
+        </div>
+        <div class="form-group">
+            <label>Edit Your Name</label>
+            <input class="form-control" type="text" placeholder="Edit Your Name" ng-model="edit.user.name">
+        </div>
+        <div class="form-group">
+            <label>Edit Your Age</label>
+            <input class="form-control" type="number" placeholder="Edit Your Age" ng-model="edit.user.age">
+        </div>
+        <div class="form-group">
+            <label>Edit Your Role</label>
+            <input class="form-control" type="text" placeholder="Edit Your Role" ng-model="edit.user.role" >
+        </div>
+        <button class="btn btn-primary" type="submit" ng-click="edit.edit()">Edit</Button></br>
+    </form>
+    </div>
+</div> 
